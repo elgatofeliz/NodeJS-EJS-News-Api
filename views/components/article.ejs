@@ -1,0 +1,15 @@
+<% news.forEach(elt=> { %>
+    <article>
+        <h2>
+            <%= elt.title %>
+        </h2>
+        <img src="<%= elt.urlToImage %>" alt="<%= elt.title %>">
+        <p>
+            <%= elt.description %>
+        </p>
+        <span>
+            <%= elt.publishedAt.slice(0, 10) %>
+        </span>
+        <a href="<%= elt.url %>">Read more...</a>
+    </article>
+    <% }) %>
